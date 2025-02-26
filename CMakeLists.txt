@@ -24,7 +24,8 @@ project(my_stl)
 #link_directories("../libs/gmock/")
 
 add_executable(${PROJECT_NAME} 
-    ${CMAKE_SOURCE_DIR}/containers/sequence_containers/vector.cpp
+    #${CMAKE_SOURCE_DIR}/containers/sequence_containers/vector.cpp
+    ${CMAKE_SOURCE_DIR}/containers/associative_containers/map.cpp
 )
 
 #target_link_libraries(${PROJECT_NAME} debug gtest              optimized gtest)
