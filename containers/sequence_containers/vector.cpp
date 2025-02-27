@@ -1,7 +1,6 @@
-#include <iostream>
-#include <vector>
+#include "my_vector.h"
 
-int main()
+int vecotr_main()
 {
     std::vector<int> v = {1, 2, 3, 4, 5};
 

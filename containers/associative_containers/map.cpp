@@ -1,7 +1,6 @@
-#include <iostream>
-#include <map>
+#include "my_map.h"
 
-int main()
+int map_main()
 {
     std::map<int, std::string> m = {{1, "one"}, {2, "two"}, {3, "three"}};
 
