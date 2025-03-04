@@ -13,6 +13,9 @@ include_directories("${CMAKE_SOURCE_DIR}/include/gmock/")
 include_directories("${CMAKE_SOURCE_DIR}/containers/")
 include_directories("${CMAKE_SOURCE_DIR}/containers/sequence_containers/")
 include_directories("${CMAKE_SOURCE_DIR}/containers/associative_containers/")
+include_directories("${CMAKE_SOURCE_DIR}/allocators/")
+include_directories("${CMAKE_SOURCE_DIR}/iterators/")
+include_directories("${CMAKE_SOURCE_DIR}/test/")
 #include_directories("${CMAKE_SOURCE_DIR}/common/")
 #include_directories("${CMAKE_SOURCE_DIR}/peq/")
 #include_directories("${CMAKE_SOURCE_DIR}/islip/")
@@ -30,6 +33,9 @@ add_executable(${PROJECT_NAME}
     ${CMAKE_SOURCE_DIR}/main.cpp
     ${CMAKE_SOURCE_DIR}/containers/sequence_containers/vector.cpp
     ${CMAKE_SOURCE_DIR}/containers/associative_containers/map.cpp
+    ${CMAKE_SOURCE_DIR}/allocators/2_1_1_jjalloc.cpp
+    ${CMAKE_SOURCE_DIR}/iterators/3_2_mylist-iter-test.cpp
+    ${CMAKE_SOURCE_DIR}/test/test.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} debug gtest              optimized gtest)
